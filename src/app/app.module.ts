@@ -10,6 +10,7 @@ import { SubFooterComponent } from './pages/sub-footer/sub-footer.component';
 import { EducationComponent } from './pages/education/education.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { TestimonialsComponent } from './pages/testimonials/testimonials.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TestimonialsComponent } from './pages/testimonials/testimonials.compone
     SubFooterComponent,
     EducationComponent,
     SkillsComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
