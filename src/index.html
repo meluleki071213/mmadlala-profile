@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +14,9 @@
 
   <link rel="icon" type="image/x-icon" href="assets/images/icon/icon.ico">
 
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
+    rel='stylesheet' type='text/css'>
   <!-- Global CSS -->
   <link rel="stylesheet" href="assets/static/plugins/bootstrap/css/bootstrap.min.css">
   <!-- Plugins CSS -->
@@ -22,22 +25,49 @@
   <link id="theme-style" rel="stylesheet" href="assets/static/css/styles-14.css">
   <link id="theme-style" rel="stylesheet" href="assets/static/css/custom.css">
 </head>
+
 <body>
   <app-root></app-root>
 
   <!-- Javascript -->
-    <script type="text/javascript" src="assets/static/plugins/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="assets/static/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/static/plugins/back-to-top.js"></script>
-    <script type="text/javascript" src="assets/static/plugins/jquery-scrollto/jquery.scrollto.min.js"></script>
-    <script type="text/javascript" src="assets/static/plugins/easy-pie-chart/src/easypiechart.js"></script>
-    <script type="text/javascript" src="assets/static/plugins/easy-pie-chart/src/jquery.plugin.js"></script>
-    <script type="text/javascript" src="assets/static/plugins/easy-pie-chart/src/renderer/canvas.js"></script>
-    <script type="text/javascript" src="assets/static/plugins/imagesloaded.pkgd.min.js"></script>
-    <script type="text/javascript" src="assets/static/plugins/isotope.pkgd.min.js"></script>
+  <script type="text/javascript" src="assets/static/plugins/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="assets/static/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/static/plugins/back-to-top.js"></script>
+  <script type="text/javascript" src="assets/static/plugins/jquery-scrollto/jquery.scrollto.min.js"></script>
+  <script type="text/javascript" src="assets/static/plugins/easy-pie-chart/src/easypiechart.js"></script>
+  <script type="text/javascript" src="assets/static/plugins/easy-pie-chart/src/jquery.plugin.js"></script>
+  <script type="text/javascript" src="assets/static/plugins/easy-pie-chart/src/renderer/canvas.js"></script>
+  <script type="text/javascript" src="assets/static/plugins/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" src="assets/static/plugins/isotope.pkgd.min.js"></script>
   <!-- custom js -->
-    <script type="text/javascript" src="assets/static/js/main.js"></script>
+  <script type="text/javascript" src="assets/static/js/main.js"></script>
 
-    <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'f3537582-aba3-4a36-8e13-8d3a3ed61794', f: true }); done = true; } }; })();</script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAL81pJ5s2OhCH6k2xsyRiHQSMjrGTRBL4",
+      authDomain: "meluleki-madlala.firebaseapp.com",
+      databaseURL: "https://meluleki-madlala.firebaseio.com",
+      projectId: "meluleki-madlala",
+      storageBucket: "meluleki-madlala.appspot.com",
+      messagingSenderId: "988483286632",
+      appId: "1:988483286632:web:ad07b68363e45488062ddd",
+      measurementId: "G-Y9R571E7GG"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+  <script type='text/javascript'
+    data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({ c: 'f3537582-aba3-4a36-8e13-8d3a3ed61794', f: true }); done = true; } }; })();</script>
 </body>
+
 </html>
