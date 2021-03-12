@@ -1,0 +1,40 @@
+[debug] [2021-03-12T23:44:07.027Z] ----------------------------------------------------------------------
+[debug] [2021-03-12T23:44:07.028Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-03-12T23:44:07.028Z] CLI Version:   8.16.2
+[debug] [2021-03-12T23:44:07.029Z] Platform:      linux
+[debug] [2021-03-12T23:44:07.029Z] Node Version:  v12.16.3
+[debug] [2021-03-12T23:44:07.029Z] Time:          Sat Mar 13 2021 01:44:07 GMT+0200 (South Africa Standard Time)
+[debug] [2021-03-12T23:44:07.029Z] ----------------------------------------------------------------------
+[debug] [2021-03-12T23:44:07.029Z] 
+[debug] [2021-03-12T23:44:07.030Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-03-12T23:44:07.043Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-12T23:44:07.044Z] > authorizing via signed-in user
+[debug] [2021-03-12T23:44:07.044Z] [iam] checking project meluleki-madlala for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-03-12T23:44:07.045Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-12T23:44:07.045Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-12T23:44:07.669Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Fri, 12 Mar 2021 23:44:07 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-12T23:44:07.674Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/meluleki-madlala:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-03-12T23:44:07.979Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-03-12T23:44:07.979Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2021-03-12T23:44:10.023Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 12 Mar 2021 23:44:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1482","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-12T23:44:10.029Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/meluleki-madlala  
+ 
+[debug] [2021-03-12T23:44:11.250Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 12 Mar 2021 23:44:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'meluleki-madlala'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-03-12T23:44:11.256Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/meluleki-madlala/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-03-12T23:44:14.322Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 12 Mar 2021 23:44:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[meluleki-madlala]: beginning deploy... 
+[info] i  hosting[meluleki-madlala]: found 59 files in dist/profile 
+[debug] [2021-03-12T23:44:15.647Z] [hosting] hash cache [ZGlzdC9wcm9maWxl] stored for 59 files
+[debug] [2021-03-12T23:44:15.647Z] [hosting][hash queue][FINAL] {"max":1291,"min":35,"avg":162.91525423728814,"active":0,"complete":59,"success":59,"errored":0,"retried":0,"total":59,"elapsed":1301}
+[debug] [2021-03-12T23:44:15.647Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/meluleki-madlala/versions/6b70d030e85f56d0:populateFiles  
+ <request body omitted>
+[debug] [2021-03-12T23:44:18.112Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 12 Mar 2021 23:44:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-12T23:44:18.161Z] [hosting][populate queue][FINAL] {"max":2475,"min":2475,"avg":2475,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2516}
+[debug] [2021-03-12T23:44:18.161Z] [hosting] uploads queued: 58
